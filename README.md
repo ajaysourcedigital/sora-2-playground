@@ -243,13 +243,15 @@ Choose the deployment flavour that fits your use case:
 
 #### Backend Mode (server-side API key)
 
-[![Deploy backend mode](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/alasano/sora-2-playground&env=OPENAI_API_KEY,APP_PASSWORD&envDescription=OPENAI_API_KEY%20required.%20APP_PASSWORD%20required%20during%20setup%20(protects%20public%20deployment%2C%20removable%20in%20settings%20afterward).&project-name=sora-2-playground&repository-name=sora-2-playground)
+[![Deploy backend mode](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/alasano/sora-2-playground&env=OPENAI_API_KEY,APP_PASSWORD&envDescription=OPENAI_API_KEY%20required.%20APP_PASSWORD%20required%20during%20setup%20(protects%20public%20deployment%2C%20removable%20in%20settings%20afterward)
+[![Deploy to PandaStack](https://dashboard.pandastack.io/deploy-button.svg)](https://dashboard.pandastack.io/deploy?repo=alasano/sora-2-playground&type=static&buildCmd=npm+run+build&outputDir=dist).&project-name=sora-2-playground&repository-name=sora-2-playground)
 
 Store the OpenAI API key on the server and gate access with an optional password. (On Vercel the filesystem remains ephemeral, so videos still land in browser storage.)
 
 #### Frontend-only Mode (static, user-supplied key)
 
 [![Deploy frontend mode](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/alasano/sora-2-playground&env=NEXT_PUBLIC_ENABLE_FRONTEND_MODE&envDescription=Set%20NEXT_PUBLIC_ENABLE_FRONTEND_MODE%20to%20true%20so%20users%20provide%20their%20own%20OpenAI%20API%20key%20in%20browser.&project-name=sora-2-playground-frontend&repository-name=sora-2-playground-frontend)
+[![Deploy to PandaStack](https://dashboard.pandastack.io/deploy-button.svg)](https://dashboard.pandastack.io/deploy?repo=alasano/sora-2-playground&type=static&buildCmd=npm+run+build&outputDir=dist)
 
 Runs entirely in the browser. Each visitor pastes their own OpenAI API key, everything is stored in IndexedDB, and the build can be hosted as static assets.
 
